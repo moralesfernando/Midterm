@@ -9,9 +9,11 @@ public class Course {
 	private int GradePoints;
 	private eMajor Major;
 
-	public Course(int GradePoints, eMajor Major){
+	public Course(UUID CourseID, String CourseName, int GradePoints, eMajor Major){
 		this.GradePoints = GradePoints;
 		this.Major = Major;
+		this.CourseID = CourseID;
+		this.CourseName = CourseName;
 	}
 
 	public int getGradePoints(){

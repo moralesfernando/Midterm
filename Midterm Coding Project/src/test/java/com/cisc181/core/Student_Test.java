@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.UUID;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -41,6 +42,24 @@ public class Student_Test {
 		StudentList.add(St9);
 		Student St10 = new Student("FN10", "MN10", "LN10", new Date(97,10,10), eMajor.NURSING,"10 Address Blvd.", "000-000-0010", "FML10@udel.edu");
 		StudentList.add(St10);
+	
+		ArrayList<Course> CourseList = new ArrayList<Course>();
+		Course COMPSI = new Course(UUID.randomUUID(), "PHYS100", 100, eMajor.COMPSI);
+		CourseList.add(COMPSI);
+		Course CHEM = new Course(UUID.randomUUID(), "CHEM200", 100, eMajor.CHEM);
+		CourseList.add(CHEM);
+		Course NURSING = new Course(UUID.randomUUID(), "NURS300", 100, eMajor.NURSING);
+		CourseList.add(NURSING);
+		
+		ArrayList<Semester> SemesterList = new ArrayList<Semester>();
+		Semester FALL = new Semester(UUID.randomUUID(), new Date(116,7,30), new Date(116,12,12));
+		SemesterList.add(FALL);
+		Semester SPRING = new Semester(UUID.randomUUID(), new Date(117,2,1), new Date(117,5,26));
+		SemesterList.add(SPRING);
+		
+		ArrayList<Section> SectionList = new ArrayList<Section>();
+		//Section Sct1 = new Section(Course.get(0).getCourseID(), Semester.get(0).getSemesterID(), UUID.randomUUID())
+		
 	}
 
 	@Test

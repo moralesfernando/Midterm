@@ -9,4 +9,10 @@ public class Semester {
 	public Date StartDate;
 	public Date EndDate;
 	
+	Semester(UUID SemesterID, Date StartDate, Date EndDate){
+		this.SemesterID = SemesterID;
+		this.StartDate = StartDate;
+		this.EndDate = EndDate;
+	}
 }
+
