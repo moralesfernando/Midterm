@@ -4,14 +4,22 @@ import java.util.UUID;
 
 
 public class Course {
-	private UUID CourseID;
-	private String CourseName;
+	public UUID CourseID;
+	public String CourseName;
 	private int GradePoints;
 	private eMajor Major;
+
+	public Course(int GradePoints, eMajor Major){
+		this.GradePoints = GradePoints;
+		this.Major = Major;
+	}
+
+	public int getGradePoints(){
+		return GradePoints;
+	}
+
+	public eMajor getMajor(){
+		return Major;
+	}
 	
 }
-
-
-
-
-
