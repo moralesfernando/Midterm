@@ -14,5 +14,9 @@ public class Semester {
 		this.StartDate = StartDate;
 		this.EndDate = EndDate;
 	}
+	
+	public UUID getSemesterID(){
+		return SemesterID;
+	}
 }
 

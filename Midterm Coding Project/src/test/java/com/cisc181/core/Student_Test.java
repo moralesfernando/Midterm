@@ -58,8 +58,18 @@ public class Student_Test {
 		SemesterList.add(SPRING);
 		
 		ArrayList<Section> SectionList = new ArrayList<Section>();
-		//Section Sct1 = new Section(Course.get(0).getCourseID(), Semester.get(0).getSemesterID(), UUID.randomUUID())
-		
+		Section Sct1 = new Section(Course.get(0).CourseID, Semester.get(0).SemesterID, UUID.randomUUID(), 111);
+		SectionList.add(Sct1);
+		Section Sct2 = new Section(Course.get(0).CourseID, Semester.get(1).SemesterID, UUID.randomUUID(), 122);
+		SectionList.add(Sct2);
+		Section Sct3 = new Section(Course.get(1).CourseID, Semester.get(0).SemesterID, UUID.randomUUID(), 213);
+		SectionList.add(Sct3);
+		Section Sct4 = new Section(Course.get(1).CourseID, Semester.get(1).SemesterID, UUID.randomUUID(), 224);
+		SectionList.add(Sct4);
+		Section Sct5 = new Section(Course.get(2).CourseID, Semester.get(0).SemesterID, UUID.randomUUID(), 315);
+		SectionList.add(Sct5);
+		Section Sct6 = new Section(Course.get(2).CourseID, Semester.get(1).SemesterID, UUID.randomUUID(), 326);
+		SectionList.add(Sct6);
 	}
 
 	@Test

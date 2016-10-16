@@ -24,4 +24,8 @@ public class Course {
 		return Major;
 	}
 	
+	public UUID CourseID(){
+		return CourseID;
+	}
+	
 }
