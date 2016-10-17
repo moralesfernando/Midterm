@@ -15,4 +15,8 @@ public class Section {
 		this.SectionID = SectionID;
 		this.RoomID = RoomID;
 	}
+
+	public UUID getSectionID() {
+		return SectionID;
+	}
 }
